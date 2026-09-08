@@ -1,3 +1,3 @@
 # weby 
-Web o hokejovém klubu HC Škoda Plzeň 
+Web o hokejovém klubu HC Škoda Plzeň -
 Informace, zajímavosti 
