@@ -1,126 +1,263 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web o týmu HC Škoda Plzeň</title>
     <link rel="icon" href="logo2.png">
+
+    <style>
+        body {
+            background-color: #d4e6f1;
+        }
+
+        .rozlozeni {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .tabulka {
+            width: 50%;
+        }
+
+        .tabulka table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .tabulka th,
+        .tabulka td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        .tabulka th {
+            background-color: #0046ad;
+            color: white;
+        }
+
+        @media (max-width: 700px) {
+            .rozlozeni {
+                flex-direction: column;
+            }
+
+            .tabulka {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Web o týmu HC Škoda Plzeň</h1>
- 
+
+    <h1>Web o týmu <span style="color: #0046ad;">HC Škoda Plzeň</span></h1>
+
     <h2>Zprávy</h2>
     <p>Sem napište text zpráv...</p>
- 
+
     <h2>Informace</h2>
     <p>Sem napište informace...</p>
- 
+
     <h2>Historie</h2>
     <p>Sem napište historii...</p>
- 
+
     <h2>Novinky</h2>
     <p>Sem napište novinky...</p>
- 
+
     <h2>Tabulka</h2>
     <p>Sem napište tabulku...</p>
- 
- 
-    <p>Zde se můžete mrknout na web našeho týmu</p>
-     <p><a href="https://hcplzen.cz" target="_blank">Web HC Škoda Plzeň</a></p>
 
-     
-     <form action="" method="get">
-        <input type="text" id="name">
+    <p>Zde se můžete mrknout na web našeho týmu</p>
+
+    <p>
+        <a href="https://hcplzen.cz" target="_blank">
+            Web HC Škoda Plzeň
+        </a>
+    </p>
+
+    <form action="" method="get">
+
+        <input type="text" id="name" name="name">
         <label for="name">Uživatelské jméno</label>
+
         <br>
-        <input type="password" id="password">
+
+        <input type="password" id="password" name="password">
         <label for="password">Heslo</label>
+
         <br>
         <br>
+
         <button type="submit">Odeslat</button>
 
     </form>
- 
-        <img src="./logo.jfif" alt="Logo HC Škoda Plzeň" width="300">
- 
-     <h2> Tabulka: </h2>
-     <table border="2" style="border: 3px solid black;">
-        <tr>
-    <th>Pořadí</th>
-    <th>Tým</th>
-    <th>Body</th>
-</tr>
-<tr>
-    <td>1.</td>
-    <td>HC Oceláři Třinec</td>
-    <td>28</td>
-</tr>
-<tr>
-    <td>2.</td>
-    <td>HC Dynamo Pardubice</td>
-    <td>26</td>
-</tr>
-<tr>
-    <td>3.</td>
-    <td>BYD Energie Karlovy Vary</td>
-    <td>18</td>
-</tr>
-<tr>
-    <td>4.</td>
-    <td>HC Škoda Plzeň</td>
-    <td>16</td>
-</tr>
-<tr>
-    <td>5.</td>
-    <td>Mountfield HK</td>
-    <td>16</td>
-</tr>
-<tr>
-    <td>6.</td>
-    <td>Banes Motor České Budějovice</td>
-    <td>16</td>
-</tr>
-<tr>
-    <td>7.</td>
-    <td>Rytíři Kladno</td>
-    <td>15</td>
-</tr>
-<tr>
-    <td>8.</td>
-    <td>HC Sparta Praha</td>
-    <td>14</td>
-</tr>
-<tr>
-    <td>9.</td>
-    <td>Bílí Tygři Liberec</td>
-    <td>14</td>
-</tr>
-<tr>
-    <td>10.</td>
-    <td>HC Verva Litvínov</td>
-    <td>12</td>
-</tr>
-<tr>
-    <td>11.</td>
-    <td>HC Kometa Brno</td>
-    <td>11</td>
-</tr>
-<tr>
-    <td>12.</td>
-    <td>BK Mladá Boleslav</td>
-    <td>9</td>
-</tr>
-<tr>
-    <td>13.</td>
-    <td>HC Vítkovice Ridera</td>
-    <td>7</td>
-</tr>
-<tr>
-    <td>14.</td>
-    <td>HC Olomouc</td>
-    <td>5</td>
-</tr>
-     </table>
- 
- </body>
+
+    <img src="hchc.png" alt="Logo HC Škoda Plzeň" width="300">
+
+    <div class="rozlozeni">
+
+        <div class="tabulka">
+
+            <h2>Tabulka:</h2>
+
+            <table border="2" style="border: 3px solid black;">
+
+                <tr>
+                    <th>Pořadí</th>
+                    <th>Tým</th>
+                    <th>Body</th>
+                </tr>
+
+                <tr>
+                    <td>1.</td>
+                    <td>HC Oceláři Třinec</td>
+                    <td>37</td>
+                </tr>
+
+                <tr>
+                    <td>2.</td>
+                    <td>HC Dynamo Pardubice</td>
+                    <td>30</td>
+                </tr>
+
+                <tr>
+                    <td>3.</td>
+                    <td>BYD Energie Karlovy Vary</td>
+                    <td>25</td>
+                </tr>
+
+                <tr>
+                    <td>4.</td>
+                    <td>Mountfield HK</td>
+                    <td>23</td>
+                </tr>
+
+                <tr>
+                    <td>5.</td>
+                    <td>Banes Motor České Budějovice</td>
+                    <td>23</td>
+                </tr>
+
+                <tr>
+                    <td>6.</td>
+                    <td>Rytíři Kladno</td>
+                    <td>23</td>
+                </tr>
+
+                <tr>
+                    <td>7.</td>
+                    <td>Bílí Tygři Liberec</td>
+                    <td>22</td>
+                </tr>
+
+                <tr>
+                    <td>8.</td>
+                    <td>HC Kometa Brno</td>
+                    <td>20</td>
+                </tr>
+
+                <tr>
+                    <td>9.</td>
+                    <td>HC Sparta Praha</td>
+                    <td>19</td>
+                </tr>
+
+                <tr>
+                    <td>10.</td>
+                    <td>HC Škoda Plzeň</td>
+                    <td>18</td>
+                </tr>
+
+                <tr>
+                    <td>11.</td>
+                    <td>HC Verva Litvínov</td>
+                    <td>18</td>
+                </tr>
+
+                <tr>
+                    <td>12.</td>
+                    <td>BK Mladá Boleslav</td>
+                    <td>14</td>
+                </tr>
+
+                <tr>
+                    <td>13.</td>
+                    <td>HC Vítkovice Ridera</td>
+                    <td>13</td>
+                </tr>
+
+                <tr>
+                    <td>14.</td>
+                    <td>HC Olomouc</td>
+                    <td>9</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <div class="tabulka">
+
+            <h2>Další zápasy Plzně</h2>
+
+            <table>
+
+                <tr>
+                    <th>Datum</th>
+                    <th>Zápas</th>
+                    <th>Čas</th>
+                </tr>
+
+                <tr>
+                    <td>27. 10. 2026</td>
+                    <td>Plzeň - Olomouc</td>
+                    <td>17:30</td>
+                </tr>
+
+                <tr>
+                    <td>30. 10. 2026</td>
+                    <td>Plzeň - Třinec</td>
+                    <td>17:30</td>
+                </tr>
+
+                <tr>
+                    <td>1. 11. 2026</td>
+                    <td>Plzeň - Kladno</td>
+                    <td>16:30</td>
+                </tr>
+
+                <tr>
+                    <td>10. 11. 2026</td>
+                    <td>Davos - Plzeň</td>
+                    <td>18:45</td>
+                </tr>
+
+                <tr>
+                    <td>13. 11. 2026</td>
+                    <td>Mountfield HK - Plzeň</td>
+                    <td>18:00</td>
+                </tr>
+
+                <tr>
+                    <td>15. 11. 2026</td>
+                    <td>Plzeň - Mladá Boleslav</td>
+                    <td>17:30</td>
+                </tr>
+
+            </table>
+
+            <p>
+                <a href="https://www.livesport.cz/tym/plzen/CMBTIThf/program/"
+                   target="_blank">
+                    Další zápasy na Livesportu
+                </a>
+            </p>
+
+        </div>
+
+    </div>
+
+</body>
 </html>
