@@ -12,6 +12,12 @@
             background-color: #d4e6f1;
         }
 
+        h2:hover {
+            color: blue;
+            cursor: pointer;
+            transition: 0.1s;
+        }
+
         .rozlozeni {
             display: flex;
             gap: 20px;
@@ -36,6 +42,15 @@
         .tabulka th {
             background-color: #0046ad;
             color: white;
+        }
+
+        /* Zarovnání loga na střed */
+        .logo {
+            display: block;
+            width: 300px;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
         }
 
         @media (max-width: 700px) {
@@ -94,7 +109,8 @@
 
     </form>
 
-    <img src="hchc.png" alt="Logo HC Škoda Plzeň" width="300">
+    <!-- Logo uprostřed stránky -->
+    <img src="/hchc.png" alt="Logo HC Škoda Plzeň" class="logo">
 
     <div class="rozlozeni">
 
@@ -113,85 +129,85 @@
                 <tr>
                     <td>1.</td>
                     <td>HC Oceláři Třinec</td>
-                    <td>37</td>
+                    <td>39</td>
                 </tr>
 
                 <tr>
                     <td>2.</td>
                     <td>HC Dynamo Pardubice</td>
-                    <td>30</td>
+                    <td>33</td>
                 </tr>
 
                 <tr>
                     <td>3.</td>
+                    <td>Rytíři Kladno</td>
+                    <td>29</td>
+                </tr>
+
+                <tr>
+                    <td>4.</td>
+                    <td>Banes Motor České Budějovice</td>
+                    <td>26</td>
+                </tr>
+
+                <tr>
+                    <td>5.</td>
                     <td>BYD Energie Karlovy Vary</td>
                     <td>25</td>
                 </tr>
 
                 <tr>
-                    <td>4.</td>
+                    <td>6.</td>
                     <td>Mountfield HK</td>
                     <td>23</td>
                 </tr>
 
                 <tr>
-                    <td>5.</td>
-                    <td>Banes Motor České Budějovice</td>
-                    <td>23</td>
-                </tr>
-
-                <tr>
-                    <td>6.</td>
-                    <td>Rytíři Kladno</td>
-                    <td>23</td>
-                </tr>
-
-                <tr>
                     <td>7.</td>
+                    <td>HC Škoda Plzeň</td>
+                    <td>23</td>
+                </tr>
+
+                <tr>
+                    <td>8.</td>
+                    <td>HC Sparta Praha</td>
+                    <td>22</td>
+                </tr>
+
+                <tr>
+                    <td>9.</td>
                     <td>Bílí Tygři Liberec</td>
                     <td>22</td>
                 </tr>
 
                 <tr>
-                    <td>8.</td>
-                    <td>HC Kometa Brno</td>
-                    <td>20</td>
-                </tr>
-
-                <tr>
-                    <td>9.</td>
-                    <td>HC Sparta Praha</td>
-                    <td>19</td>
-                </tr>
-
-                <tr>
                     <td>10.</td>
-                    <td>HC Škoda Plzeň</td>
-                    <td>18</td>
+                    <td>HC Kometa Brno</td>
+                    <td>21</td>
                 </tr>
 
                 <tr>
                     <td>11.</td>
                     <td>HC Verva Litvínov</td>
-                    <td>18</td>
+                    <td>21</td>
                 </tr>
 
                 <tr>
                     <td>12.</td>
                     <td>BK Mladá Boleslav</td>
-                    <td>14</td>
+                    <td>17</td>
                 </tr>
 
                 <tr>
                     <td>13.</td>
                     <td>HC Vítkovice Ridera</td>
-                    <td>13</td>
+                    <td>16</td>
                 </tr>
 
                 <tr>
                     <td>14.</td>
                     <td>HC Olomouc</td>
-                    <td>9</td>
+                    <td>13</td>
                 </tr>
 
             </table>
@@ -207,43 +223,71 @@
                 <tr>
                     <th>Datum</th>
                     <th>Zápas</th>
+                    <th>Soutěž</th>
                     <th>Čas</th>
-                </tr>
-
-                <tr>
-                    <td>27. 10. 2026</td>
-                    <td>Plzeň - Olomouc</td>
-                    <td>17:30</td>
-                </tr>
-
-                <tr>
-                    <td>30. 10. 2026</td>
-                    <td>Plzeň - Třinec</td>
-                    <td>17:30</td>
-                </tr>
-
-                <tr>
-                    <td>1. 11. 2026</td>
-                    <td>Plzeň - Kladno</td>
-                    <td>16:30</td>
                 </tr>
 
                 <tr>
                     <td>10. 11. 2026</td>
                     <td>Davos - Plzeň</td>
-                    <td>18:45</td>
+                    <td>Liga mistrů</td>
+                    <td>19:45</td>
                 </tr>
 
                 <tr>
                     <td>13. 11. 2026</td>
                     <td>Mountfield HK - Plzeň</td>
+                    <td>Extraliga</td>
                     <td>18:00</td>
                 </tr>
 
                 <tr>
                     <td>15. 11. 2026</td>
                     <td>Plzeň - Mladá Boleslav</td>
+                    <td>Extraliga</td>
                     <td>17:30</td>
+                </tr>
+
+                <tr>
+                    <td>17. 11. 2026</td>
+                    <td>Plzeň - Davos</td>
+                    <td>Liga mistrů</td>
+                    <td>17:30</td>
+                </tr>
+
+                <tr>
+                    <td>20. 11. 2026</td>
+                    <td>Plzeň - Pardubice</td>
+                    <td>Extraliga</td>
+                    <td>17:30</td>
+                </tr>
+
+                <tr>
+                    <td>22. 11. 2026</td>
+                    <td>Plzeň - Karlovy Vary</td>
+                    <td>Extraliga</td>
+                    <td>16:30</td>
+                </tr>
+
+                <tr>
+                    <td>24. 11. 2026</td>
+                    <td>České Budějovice - Plzeň</td>
+                    <td>Extraliga</td>
+                    <td>17:30</td>
+                </tr>
+
+                <tr>
+                    <td>27. 11. 2026</td>
+                    <td>Plzeň - Kometa Brno</td>
+                    <td>Extraliga</td>
+                    <td>17:30</td>
+                </tr>
+
+                <tr>
+                    <td>29. 11. 2026</td>
+                    <td>Sparta Praha - Plzeň</td>
+                    <td>Extraliga</td>
+                    <td>16:00</td>
                 </tr>
 
             </table>
